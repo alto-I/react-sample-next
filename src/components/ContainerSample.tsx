@@ -16,7 +16,7 @@ const Container = (props: ContainerProps): JSX.Element => {
   );
 };
 
-const Parent = (): JSX.Element => {
+const ParentSample = (): JSX.Element => {
   return (
     <Container title="Hello">
       <p>ここの部分が背景色で囲まれます</p>
@@ -24,4 +24,4 @@ const Parent = (): JSX.Element => {
   );
 };
 
-export default Parent;
+export default ParentSample;
