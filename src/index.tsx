@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Parent } from './components/Parent';
+import { UseMemoSample } from './components/UseMemoSample';
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root');
@@ -8,7 +8,7 @@ const root = createRoot(container!);
 
 root.render(
   <React.StrictMode>
-    <Parent />
+    <UseMemoSample />
   </React.StrictMode>,
 );
 
