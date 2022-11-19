@@ -3,17 +3,18 @@ import { createRoot } from 'react-dom/client';
 import Hello from './components/Hello';
 import Name from './components/Name';
 import Message from './components/Message';
+import Parent from './components/ContainerSample';
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
-console.log(root)
 
 root.render(
   <React.StrictMode>
     <Hello />
     <Name />
     <Message />
+    <Parent />
   </React.StrictMode>,
 );
 
