@@ -1,11 +1,6 @@
 import React from 'react';
 
-type ContainerProps = {
-  title: string
-  children: React.ReactNode
-}
-
-const Container = (props: ContainerProps): JSX.Element => {
+const Container = (props) => {
   const { title, children } = props;
 
   return (
@@ -16,12 +11,13 @@ const Container = (props: ContainerProps): JSX.Element => {
   );
 };
 
-const Parent = (): JSX.Element => {
+const ParentJSX = () => {
   return (
-    <Container title="Hello">
+    // ここでtitleを消してもjsxだとエラーがでない、tsxだとtitle必須というエラーを吐いてくれる
+    <Container>
       <p>ここの部分が背景色で囲まれます</p>
     </Container>
   );
 };
 
-export default Parent;
+export default ParentJSX;

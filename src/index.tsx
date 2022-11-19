@@ -4,6 +4,7 @@ import Hello from './components/Hello';
 import Name from './components/Name';
 import Message from './components/Message';
 import Parent from './components/ContainerSample';
+import ParentJSX from './components/ContainerSampleJSX';
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root');
@@ -15,6 +16,7 @@ root.render(
     <Name />
     <Message />
     <Parent />
+    <ParentJSX />
   </React.StrictMode>,
 );
 
