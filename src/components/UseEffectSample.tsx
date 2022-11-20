@@ -39,6 +39,7 @@ export const UseEffectSample = () => {
     if (savedLocale !== null) {
       setLocale(getLocaleFromString(savedLocale));
     }
+    console.log('実行');
   }, []);
 
   useEffect(() => {
