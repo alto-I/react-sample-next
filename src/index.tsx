@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { UseImperativeHandleSample } from './components/UseImperativeHandleSample';
+import { UseCostumHookSample } from './components/UseCostumHookSample';
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root');
@@ -8,7 +8,7 @@ const root = createRoot(container!);
 
 root.render(
   <React.StrictMode>
-    <UseImperativeHandleSample />
+    <UseCostumHookSample />
   </React.StrictMode>,
 );
 
